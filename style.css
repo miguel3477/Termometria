@@ -1,36 +1,25 @@
 body {
-    font-family: "Helvetica";
     background-color: rgba(0, 0, 0, 0.884);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1 {
     text-align: center;
+    font-family: 'Helvetica';
 }
-.container > div {
+.container div {
     display: flex;
     flex-direction: column;
 }
-.form-inline {  
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-#header{
+.caixa-header{
+    margin: 0px;
+    padding: 20px;
     background-color: #600073;
-    margin-bottom: 0px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     color: white;
-    margin-bottom: 4px;
-}
-#content {
-    background-color: blueviolet;
-    color: white;
-}
-#bottom {
-    color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 100%;
+    margin-bottom: 3px;
 }
 input[type=text], select {
     padding: 4px;
@@ -38,21 +27,51 @@ input[type=text], select {
     border-color: white;
     margin-bottom: 3px;
 }
-input[type=submit] {
-    padding: 16px;
-    border-radius: 5px;
-    color: white;
-    background-color: #aa00cc;
-    border-color: #aa00cc;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 4px;
-}
-.caixa {
+.caixa-content {
     margin: 0px;
     padding: 20px;
+    background-color: blueviolet;
+    color: white;
+}
+.caixa-bottom {
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    background-color: #aa00cc;
+    border-color: #aa00cc;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 3px;
 }
 .texto {
     font-family: sans-serif;
     margin-bottom: 2px;
+}
+button {
+    margin: 0px;
+    padding: 10px;
+    background-color: #aa00cc;
+    color: white;
+    margin-left: 175px;
+    border-radius: 15px;
+}
+.light-mode {
+    background-color: white;
+}
+.light-mode-header {
+    background-color: #7B0F28;
+}
+.light-mode-content {
+    background-color: #EC6988;
+}
+.light-mode-bottom {
+    background-color: #D61A46;
+    border-color: #D61A46;
+}
+.light-mode-text {
+    color: black;
 }
