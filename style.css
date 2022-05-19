@@ -1,9 +1,9 @@
 body {
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: #000000e1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;}
 h1 {
     text-align: center;
     font-family: 'Helvetica';
@@ -56,8 +56,16 @@ button {
     padding: 10px;
     background-color: #aa00cc;
     color: white;
-    margin-left: 175px;
     border-radius: 15px;
+    display: flex;
+    margin-left: 2px;
+    margin-bottom: 1px;
+}
+#light {
+    background-color: white;
+}
+#dark {
+    background-color: black;
 }
 .light-mode {
     background-color: white;
@@ -72,6 +80,16 @@ button {
     background-color: #D61A46;
     border-color: #D61A46;
 }
-.light-mode-text {
-    color: black;
+.dark-mode {
+    background-color: white;
+}
+.dark-mode-header {
+    background-color: #7B0F28;
+}
+.dark-mode-content {
+    background-color: #EC6988;
+}
+.dark-mode-bottom {
+    background-color: #D61A46;
+    border-color: #D61A46;
 }
